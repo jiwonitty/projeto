@@ -6,113 +6,23 @@
   font-family: Arial, sans-serif;
 }
 
-/* ESCONDE OS RADIOS */
-input[type="radio"] {
-  display: none;
-}
-
-/* HEADER */
-.header {
-  text-align: center;
-  padding: 40px 20px;
-  background: #f5f5f5;
-}
-
-/* TÍTULO */
-.title {
-  font-size: 64px;
-  font-weight: 900;
-  margin-bottom: 30px;
-}
-
-/* NAV BAR */
-.nav {
+.topo {
+  width: 100%;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
-  background: #0a3cb5;
-  border-radius: 8px;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
-.nav-item {
-  padding: 14px 22px;
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.3s;
+.search-container {
+  background: #e0e0e0;
+  padding: 6px 16px;
+  border-radius: 20px;
 }
-
-/* ITEM ATIVO (RADIO CHECKED) */
-#inicio:checked ~ .nav label[for="inicio"],
-#referencias:checked ~ .nav label[for="referencias"],
-#sobre:checked ~ .nav label[for="sobre"],
-#projetos:checked ~ .nav label[for="projetos"],
-#contato:checked ~ .nav label[for="contato"] {
-  background: white;
-  color: #0a3cb5;
-  border-radius: 6px 6px 0 0;
-}
-
-/* ÁREA DE CONTEÚDO */
-.secao {
-  display: none;
-  padding: 20px;
-}
-
-/* TABS */
-.tab {
-  display: none;
-  background: #0a3cb5;
-  color: white;
-  padding: 40px;
-  border-radius: 0 0 12px 12px;
-  margin-top: -2px;
-  animation: fade 0.3s ease;
-}
-
-/* MOSTRA CONTEÚDO CERTO */
-#inicio:checked ~ .content .inicio {
-  display: block;
-}
-
-#referencias:checked ~ .content .referencias {
-  display: block;
-}
-
-#sobre:checked ~ .content .sobre {
-  display: block;
-}
-
-#projetos:checked ~ .content .projetos {
-  display: block;
-}
-
-#contato:checked ~ .content .contato {
-  display: block;
-}
-
-/* ANIMAÇÃO */
-@keyframes fade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* destaque do item ativo */
-#referencias:checked ~ .navbar label[for="referencias"],
-#projetos:checked   ~ .navbar label[for="projetos"],
-#inicio:checked     ~ .navbar label[for="inicio"],
-#sobre:checked      ~ .navbar label[for="sobre"],
-#contato:checked    ~ .navbar label[for="contato"] {
-  background: white;
-  color: #1f3fbf;
-}
-
-#referencias:checked ~ .navbar label[for="referencias"],
-#projetos:checked   ~ .navbar label[for="projetos"],
-#inicio:checked     ~ .navbar label[for="inicio"],
-#sobre:checked      ~ .navbar label[for="sobre"],
-#contato:checked    ~ .navbar label[for="contato"] {
-  background: white;
-  color: #1f3fbf;
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
 }
