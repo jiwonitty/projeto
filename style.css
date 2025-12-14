@@ -2,12 +2,12 @@ header {
   text-align: center; /* centraliza todo o conteúdo do header */
   padding: 40px 20px; /* espaço interno */
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
 }
 
 /* Barra de pesquisa */
 .search-bar {
-  margin: 0 auto 20px; /* centraliza e dá espaço embaixo */
+  margin: 0 auto 50px; /* centraliza e dá espaço embaixo */
   width: 80%;
   max-width: 400px;
   height: 40px;
@@ -19,7 +19,7 @@ header {
 
 /* Título principal */
 header h1 {
-  font-size: 3rem; /* título grande */
+  font-size: 40rem; /* título grande */
   margin-bottom: 20px;
 }
 
@@ -40,6 +40,6 @@ nav li {
 
 nav li:hover,
 nav li.active {
-  background-color: #3399ff;
-  color: #fff;
+  background-color: #ffffff;
+  color: #0043a1;
 }
