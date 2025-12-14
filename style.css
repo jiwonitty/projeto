@@ -1,41 +1,47 @@
 header {
   text-align: center; /* centraliza todo o conteúdo do header */
-  padding: 40px 20px; /* espaço interno */
+  padding: 60px 20px 40px 20px; /* espaço interno */
   background-color: #fff;
  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
 }
 
 /* Barra de pesquisa */
 .search-bar {
-  margin: 0 auto 50px; /* centraliza e dá espaço embaixo */
+  margin: 0 auto 40px; /* centraliza e dá espaço embaixo */
   width: 80%;
   max-width: 400px;
-  height: 40px;
+  height: 45px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 0 15px;
   background-color: #f0f0f0;
 }
 
 /* Título principal */
 header h1 {
-  font-size: 40rem; /* título grande */
-  margin-bottom: 20px;
+  font-size: 4rem; /* título grande */
+  margin-bottom: 40px;
 }
 
 /* Navbar */
+nav {
+    background-color: #0043a1;
+    padding: 15px 0;
+}
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px; /* espaço entre os itens */
+  gap: 50px; /* espaço entre os itens */
 }
 
 nav li {
-  padding: 10px 15px;
+  padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s;
+  color: white;
 }
 
 nav li:hover,
