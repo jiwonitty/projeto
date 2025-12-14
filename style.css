@@ -38,5 +38,6 @@
   margin: 20px 0 30px;
 
   transform: scaleY(1.35);
-  letter-spacing: 1px;
+  letter-spacing: 4px;
+  line-height: 0.9;
 }
