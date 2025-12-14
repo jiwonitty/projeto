@@ -55,9 +55,9 @@ input[type="radio"] {
 }
 
 /* ÁREA DE CONTEÚDO */
-.content {
-  max-width: 800px;
-  margin: 0 auto;
+.secao {
+  display: none;
+  padding: 20px;
 }
 
 /* TABS */
@@ -96,4 +96,23 @@ input[type="radio"] {
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* destaque do item ativo */
+#referencias:checked ~ .navbar label[for="referencias"],
+#projetos:checked   ~ .navbar label[for="projetos"],
+#inicio:checked     ~ .navbar label[for="inicio"],
+#sobre:checked      ~ .navbar label[for="sobre"],
+#contato:checked    ~ .navbar label[for="contato"] {
+  background: white;
+  color: #1f3fbf;
+}
+
+#referencias:checked ~ .navbar label[for="referencias"],
+#projetos:checked   ~ .navbar label[for="projetos"],
+#inicio:checked     ~ .navbar label[for="inicio"],
+#sobre:checked      ~ .navbar label[for="sobre"],
+#contato:checked    ~ .navbar label[for="contato"] {
+  background: white;
+  color: #1f3fbf;
 }
