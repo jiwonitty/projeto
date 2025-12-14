@@ -7,27 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
+   <header class="header">
     <div class="search-bar"></div>
 
-    <h1>Portfolio</h1>
+    <h1 class="title">Portfolio</h1>
 
-    <nav>
-        <ul>
-            <li>Referências</li>
-            <li>Sobre</li>
-            <li class="active">início</li>
-            <li>Projetos</li>
-            <li>Contato</li>
-        </ul>
+    <input type="radio" name="tab" id="Referências" checked>
+    <input type="radio" name="tab" id="Sobre" checked>
+    <input type="radio" name="tab" id="Início" checked>
+    <input type="radio" name="tab" id="Projetos" checked>
+    <input type="radio" name="tab" id="Contato" checked>
+
+    <nav class="nav">
+        <label for="Referências" class="nav-item">Referências</label>
+        <label for="Sobre" class="nav-item">Sobre</label>
+        <label for="Início" class="nav-item">Início</label>
+        <label for="Projetos" class="nav-item">Projetos</label>
+        <label for="Contato" class="nav-item">Contato</label>
     </nav>
    </header>
    <main>
     <!-- seções aqui -->
    </main>
 
-   <section class="highlight">
+   <section class="content">
     <!-- conteudo dinamico da pagina -->
+     <div class="tab Referências">Conteudo de inicio</div>
+     <div class="tab Sobre">Conteudo de inicio</div>
+     <div class="tab Início">Conteudo de inicio</div>
+     <div class="tab Projetos">Conteudo de inicio</div>
+     <div class="tab Conteudo">Conteudo de inicio</div>
    </section>
 
    <section class="content-title">
