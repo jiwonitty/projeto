@@ -1,0 +1,45 @@
+header {
+  text-align: center; /* centraliza todo o conteúdo do header */
+  padding: 40px 20px; /* espaço interno */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  margin: 0 auto 20px; /* centraliza e dá espaço embaixo */
+  width: 80%;
+  max-width: 400px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0 15px;
+  background-color: #f0f0f0;
+}
+
+/* Título principal */
+header h1 {
+  font-size: 3rem; /* título grande */
+  margin-bottom: 20px;
+}
+
+/* Navbar */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* espaço entre os itens */
+}
+
+nav li {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav li:hover,
+nav li.active {
+  background-color: #3399ff;
+  color: #fff;
+}
