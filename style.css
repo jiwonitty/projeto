@@ -4,16 +4,38 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background: #e3e9f7;
 }
-nav ul {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 260px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #262626;
+
+#menu-toggle {
+  display: none;
 }
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-btn span {
+  height: 4px;
+  background: #262626;
+  border-radius: 2px;
+}
+
+#menu-toggle:checked ~ .sidebar ul {
+  left: 0;
+}
+
+nav ul {
+  left: -260px;          /* antes: 0 */
+  transition: left 0.3s ease;
+}
+
 nav ul li {
 	list-style: none;
 }
@@ -46,7 +68,7 @@ nav ul li a:hover:before {
 	width: 95%;
 }
 .wrapper {
-	margin-left: 260px;
+  margin-left: 0; /* antes: 260px */
 }
 .section {
 	display: grid;
@@ -73,4 +95,15 @@ nav ul li a:hover:before {
 }
 .logo img {
 	width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: none;
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
 }
