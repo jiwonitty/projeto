@@ -4,30 +4,6 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background: #e3e9f7;
 }
-
-#menu-toggle {
-	display: none;
-}
-
-.menu-icon {
-	position: fixed;
-	top: 20px;
-	left: 20px;
-	z-index: 1000;
-	width: 30px;
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	gap: 6px;
-}
-
-.menu-icon span {
-	height: 4px;
-	background: #000;
-	border-radius: 2px;
-}
-
-
 nav ul {
 	margin: 0;
 	padding: 0;
@@ -78,7 +54,23 @@ nav ul li a:hover:before {
 	min-height: 100vh;
 	text-align: center;
 }
-
-#menu-toggle:checked ~ .sidebar {
-	left: 0;
+.box-area h2 {
+	text-transform: uppercase;
+	font-size: 50px;
+}
+.box-area p {
+	line-height: 2;
+}
+.box-area {
+	width: 75%;
+}
+.logo {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 25px auto;
+}
+.logo img {
+	width: 100%;
 }
